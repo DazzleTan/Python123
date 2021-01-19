@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-# Time    : 2019/4/5 22:06
-# Author  : Mifen
+# Time    : 2020/11/9 17:35
+# Author  : DazzleTan
 # Email   : 2952277346@qq.com
-# Github  : https://github.com/Amd794
+# Github  : https://github.com/DazzleTan
 
 from turtle import *
 import random
@@ -10,13 +10,13 @@ length = 2
 angle  = 90
 setup(1280,720)
 up()
-color("#262626;")
+color("#262626")
 goto(-600,300)
-write('Author:Mifen',font=("微软雅黑", 18))
+write('Author:DazzleTan',font=("微软雅黑", 18))
 goto(-600,250)
-write('E-mail :2952277346@qq.com',font=("微软雅黑", 18))
+write('E-mail:377648526@qq.com',font=("微软雅黑", 18))
 goto(-600, 200)
-write('代码 :https://github.com/Amd794', font=("微软雅黑", 18))
+write('Code:https://github.com/DazzleTan', font=("微软雅黑", 18))
 goto(-600,-350)
 down()
 def draw_path(path):

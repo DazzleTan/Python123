@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-# Time    : 2019/4/6 21:06
-# Author  : Mifen
-# Email   : 2952277346@qq.com
-# Github  : https://github.com/Amd794
+# Time    : 2020/11/9 17:46
+# Author  : DazzleTan
+# Email   : 377648526@qq.com
+# Github  : https://github.com/DazzleTan
 
 
 import turtle as t
@@ -66,11 +66,11 @@ def Introduction(x=-600, y=-350):
     t.up()
     t.color(getColor(), getColor(), getColor())
     t.goto(-600, 300)
-    t.write('Author:Mifen', font=("微软雅黑", 18))
+    t.write('Author:DazzleTan', font=("微软雅黑", 18))
     t.goto(-600, 250)
-    t.write('E-mail :2952277346@qq.com', font=("微软雅黑", 18))
+    t.write('E-mail :377648526@qq.com', font=("微软雅黑", 18))
     t.goto(-600, 200)
-    t.write('Code :https://github.com/Amd794/Python123', font=("微软雅黑", 18))
+    t.write('Code :https://github.com/DazzleTan/Lesson_demo', font=("微软雅黑", 18))
     t.color("black")
     t.goto(x, y)
     t.down()

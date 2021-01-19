@@ -26,11 +26,11 @@ def author():
     lt(-270)
     gotopos(525, -330)
     color("#772a2b")
-    write("Mifen", font=("华文隶书", 24))
+    write("DazzleTan", font=("华文隶书", 24))
     gotopos(409, -360)
-    write("2952277346@qq.com", font=("华文隶书", 18))
+    write("377648526@qq.com", font=("华文隶书", 18))
     gotopos(250, -390)
-    write("https://github.com/Amd794/Python123", font=("华文隶书", 18))
+    write("https://github.com/DazzleTan/Lesson_demo", font=("华文隶书", 18))
 
 
 def apply_rules(path, rules):

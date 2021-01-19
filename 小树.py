@@ -15,13 +15,13 @@ length = 3
 path = 'X'
 angle = 25
 up()
-color("#262626;")
+color("#262626")
 goto(-600, 300)
-write('Author:Mifen', font=("微软雅黑", 18))
+write('Author:DazzleTan', font=("微软雅黑", 18))
 goto(-600, 250)
-write('E-mail :2952277346@qq.com', font=("微软雅黑", 18))
+write('E-mail :377648526@qq.com', font=("微软雅黑", 18))
 goto(-600, 200)
-write('Code :https://github.com/Amd794/Python123', font=("微软雅黑", 18))
+write('Code :https://github.com/DazzleTan/Lesson_demo', font=("微软雅黑", 18))
 goto(-600, -350)
 down()
 expalnation = {

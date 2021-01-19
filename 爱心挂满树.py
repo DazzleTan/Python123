@@ -1,31 +1,18 @@
-# -*- coding: utf-8 -*-
-# Time    : 2019/4/5 22:37
-# Author  : Mifen
-# Email   : 2952277346@qq.com
-# Github  : https://github.com/Amd794
-
-
 import turtle
 import random
-
 turtle.bgcolor("black")
-
-
-def love(x, y):  # 在(x,y)处画爱心lalala
+def love(x, y):  
     lv = turtle.Turtle()
     lv.hideturtle()
     lv.up()
-    lv.goto(x, y)  # 定位到(x,y)
-
-    def curvemove():  # 画圆弧
+    lv.goto(x, y)  
+    def curvemove():  
         for i in range(20):
             lv.right(10)
             lv.forward(2)
-
     lv.color('red', 'pink')
     lv.speed(10000000)
     lv.pensize(1)
-    # 开始画爱心lalala
     lv.down()
     lv.begin_fill()
     lv.left(140)
@@ -34,18 +21,16 @@ def love(x, y):  # 在(x,y)处画爱心lalala
     lv.left(120)
     curvemove()
     lv.forward(22)
-    lv.left(140)  # 画完复位
+    lv.left(140)  
     lv.end_fill()
-
-
 def tree(branchLen, t):
-    if branchLen > 5:  # 剩余树枝太少要结束递归
-        if branchLen < 20:  # 如果树枝剩余长度较短则变绿
+    if branchLen > 5:  
+        if branchLen < 20:  
             t.color("green")
             t.pensize(random.uniform((branchLen + 5) / 4 - 2, (branchLen + 6) / 4 + 5))
             t.down()
             t.forward(branchLen)
-            love(t.xcor(), t.ycor())  # 传输现在turtle的坐标
+            love(t.xcor(), t.ycor())  
             t.up()
             t.backward(branchLen)
             t.color("brown")
@@ -53,17 +38,14 @@ def tree(branchLen, t):
         t.pensize(random.uniform((branchLen + 5) / 4 - 2, (branchLen + 6) / 4 + 5))
         t.down()
         t.forward(branchLen)
-        # 以下递归
         ang = random.uniform(15, 45)
         t.right(ang)
-        tree(branchLen - random.uniform(12, 16), t)  # 随机决定减小长度
+        tree(branchLen - random.uniform(12, 16), t)  
         t.left(2 * ang)
-        tree(branchLen - random.uniform(12, 16), t)  # 随机决定减小长度
+        tree(branchLen - random.uniform(12, 16), t)  
         t.right(ang)
         t.up()
         t.backward(branchLen)
-
-
 myWin = turtle.Screen()
 t = turtle.Turtle()
 t.hideturtle()
@@ -76,3 +58,4 @@ t.color("brown")
 t.pensize(32)
 t.forward(60)
 tree(100, t)
+turtle.mainloop()
