@@ -1,4 +1,6 @@
 import turtle as t
+t.hideturtle()
+
 def tree(length,level):    #树的层次
     if level <= 0:
         return
@@ -13,4 +15,6 @@ def tree(length,level):    #树的层次
 t.pensize(3)
 t.color('green')
 t.left(90)
-tree(100,6)
+t.back(200)
+tree(200,8)
+t.done()
